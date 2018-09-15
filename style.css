@@ -50,6 +50,23 @@ body {
   font-size: 25px;
 }
 
+.cards-space {
+  padding: 0 5rem;
+}
+
+h4 {
+  color: orange;
+}
+
+.side-card-text {
+  border: 1px solid white;
+  padding: 1rem;
+  width: 100%;
+}
+
+.side-card {
+  margin-bottom: 1rem;
+}
 
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;
