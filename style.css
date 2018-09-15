@@ -1,0 +1,44 @@
+body {
+  background-color: #404040;
+  color: #ccc;
+}
+
+#sidebar {
+  background-color: #fff;
+  padding: 4rem;
+  position: sticky;
+  height: 100vh;
+}
+
+#content {
+  padding: 2rem 3rem;
+}
+
+.term {
+  background-color: #4d4d4d;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
+
+.section-title {
+  color: #4ec671;
+  padding-bottom: 1rem;
+  font-size: 25px;
+}
+
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
