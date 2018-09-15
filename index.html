@@ -14,20 +14,25 @@
   <div class="container-fluid">
     <div class="row">
 
-      <div class="col-lg-3 sticky-top" id="sidebar">
+      <div class="col-lg-2 sticky-top" id="sidebar">
         <div class="text-center">
-          <img width="200" height="200" class="rounded-circle" src="img/perfil.jpg">
+          <img width="150" height="150" class="rounded-circle" src="img/perfil.jpg">
         </div>
         <div class="text-center" id="my-name">
           <span>Daniel Rodrigues Coura</span>
         </div>
-        > Backend Developer
+        <ul id="skills">
+          <li>Nodejs</li>
+          <li>NoSQL database</li>
+          <li>ReactJS</li>
+        </ul>
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-10">
         <section class="row term">
           <div class="col-lg-12">
+            <img src="img/mac.png" alt="">
             <h2 class="section-title" id="head-title">~$ </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nobis quo minima est exercitationem tenetur, facilis quae doloribus accusantium, omnis, vel amet earum quibusdam. Animi doloremque praesentium distinctio voluptates rerum.</p>
+            <p id="text-output"></p>
           </div>
         </section>
 
@@ -44,28 +49,25 @@
             </div>
           </div>
         </section>
+
+        <section class="row">
+          <div class="col-lg-12">
+            <h2 class="section-title">~$ works</h2>
+          </div>
+        </section>
+
+        <section class="row">
+          <div class="col-lg-12">
+            <h2 class="section-title">~$ personal-projects</h2>
+          </div>
+        </section>
       </div>
 
 
     </div>
   </div>
   
-  <script>
-    var div = document.getElementById('head-title');
-    var texto = 'about-me';
-
-    function escrever(str, el) {
-      var char = str.split('').reverse();
-      var typer = setInterval(function() {
-        if (!char.length) return clearInterval(typer);
-        var next = char.pop();
-        el.innerHTML += next;
-      }, 100);
-    }
-
-    escrever(texto, div);
-  </script>
-
+  <script src="typer.js"></script>
 </body>
 
 </html>
