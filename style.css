@@ -56,6 +56,11 @@ body {
 
 h4 {
   color: orange;
+  margin-bottom: 1rem;
+}
+
+dd {
+  margin-bottom: 1rem;
 }
 
 .side-card-text {
