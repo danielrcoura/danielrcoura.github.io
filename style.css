@@ -1,29 +1,44 @@
+@font-face {
+  font-family: 'Source Code';
+  src: url('fonts/SourceCodePro-Regular.ttf');
+}
+
 body {
-  background-color: #404040;
+  background: #404040;
   color: #ccc;
+  font-size: 18px;
+  font-family: 'Source Code';
 }
 
 #sidebar {
-  background-color: #fff;
-  padding: 4rem;
+  background-color: #49d392;
+  color: #000;
+  padding: 2rem;
   position: sticky;
   height: 100vh;
+  box-shadow: 0px 3px 15px #252525;
 }
 
-#content {
-  padding: 2rem 3rem;
+#my-name {
+  margin-top:  1rem;
+  font-size: 25px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .term {
-  background-color: #4d4d4d;
+  background: #313131;
+  color: #fff;
   padding: 1rem;
   margin-bottom: 2rem;
-  border-radius: 4px;
+  box-shadow: 0px 2px 20px #252525;
 }
 
 .section-title {
   color: #4ec671;
-  padding-bottom: 1rem;
+  margin: 1rem 0 2rem 0;
   font-size: 25px;
 }
 

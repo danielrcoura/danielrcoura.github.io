@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Perfis: Daniel</title>
+  <title>Daniel Rodrigues Coura</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -13,51 +13,45 @@
 <body>
   <div class="container-fluid">
     <div class="row">
+
       <div class="col-lg-3 sticky-top" id="sidebar">
-        <img class="rounded-circle img-thumbnail" src="https://dyn.web.whatsapp.com/pp?e=https%3A%2F%2Fpps.whatsapp.net%2Fv%2Ft61.11540-24%2F40405000_1856006057828937_4144450025377759232_n.jpg%3Foe%3D5BA0D171%26oh%3Daff7a1155793efef2dac376f2d584c57&t=l&u=558396131586%40c.us&i=1536354589">
+        <div class="text-center">
+          <img width="200" height="200" class="rounded-circle" src="img/perfil.jpg">
+        </div>
+        <div class="text-center" id="my-name">
+          <span>Daniel Rodrigues Coura</span>
+        </div>
+        > Backend Developer
       </div>
-      <div class="col-lg-9" id="content">
-        <section class="row">
+      <div class="col-lg-9">
+        <section class="row term">
           <div class="col-lg-12">
-            <h2>Daniel Rodrigues Coura</h2>
-            <h2 class="section-title">~$ </h2>
+            <h2 class="section-title" id="head-title">~$ </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nobis quo minima est exercitationem tenetur, facilis quae doloribus accusantium, omnis, vel amet earum quibusdam. Animi doloremque praesentium distinctio voluptates rerum.</p>
           </div>
         </section>
-      </div>
-      <div class="col-lg-9" id="content">
+
         <section class="row">
           <div class="col-lg-12">
             <h2 class="section-title">~$ contributions</h2>
             <div class="row">
               <div class="col-lg-6 d-flex justify-content-center">
-                <div class="card" style="width: 19rem;">           
-                  <img class="card-img-top" height="250" src="https://avatars0.githubusercontent.com/u/28063653?s=200&v=4">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div>
+                <img width="350" height="350" src="img/guardians-logo.png">
               </div>
               <div class="col-lg-6 d-flex justify-content-center">
-              <div class="card" style="width: 19rem;">
-                  <img class="card-img-top" height="250" src="https://avatars0.githubusercontent.com/u/38761975?s=200&v=4">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div>
+                <img width="350" height="350" src="img/praca-logo.png">
               </div>
             </div>
           </div>
-          </div>
         </section>
       </div>
+
+
     </div>
   </div>
   
   <script>
-    var div = document.querySelector('.section-title');
+    var div = document.getElementById('head-title');
     var texto = 'about-me';
 
     function escrever(str, el) {
@@ -66,7 +60,7 @@
         if (!char.length) return clearInterval(typer);
         var next = char.pop();
         el.innerHTML += next;
-      }, 200);
+      }, 100);
     }
 
     escrever(texto, div);
