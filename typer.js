@@ -16,10 +16,5 @@ function output(str, el) {
   setInterval(function() { el.innerHTML = str; }, 1400);
 }
 
-function blink(str, el) {
-  setInterval(function() {div_cmd.innerHTML = "~$ about-me<span class='blink'>|</span>"},1100);
-}
-
-command(text_cmd, div_cmd);
-blink(div_cmd);
+command(text_cmd, div_cmd);;
 output(text_out, div_out);
