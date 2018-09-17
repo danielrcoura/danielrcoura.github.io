@@ -1,7 +1,7 @@
 var div_cmd = document.getElementById('head-title');
 var text_cmd = 'about-me';
 var div_out = document.getElementById('text-output');
-var text_out = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nobis quo minima est exercitationem tenetur, facilis quae doloribus accusantium, omnis, vel amet earum quibusdam. Animi doloremque praesentium distinctio voluptates rerum.';
+var text_out = 'Olá, seja bem vindo! Me chamo Daniel e sou apaixonado por Desenvolvimento Web. Sou Técnico em Informártica e estou cursando Ciência da Computação na Universidade Federal de Campina Grande. Tenho experiência com frameworks JavaScript para Frontend (Angular 5, ReactJS, VueJS) e Nodejs no Backend, já usei outras tecnologias (Django, Ruby, PHP), mas atualmente estou focando em JS, que é minha paixão. Veja a seguir alguns projetos em que me envolvo/envolvi.';
 
 function command(str, el) {
   var char = str.split('').reverse();
